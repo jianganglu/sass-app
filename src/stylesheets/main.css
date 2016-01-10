@@ -55,7 +55,34 @@ template {
 }
 
 /*! Helpers */
+/*! Global */
 /*! Base*/
 /*! Layout */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 /*! Components */
 /*! Pages*/
